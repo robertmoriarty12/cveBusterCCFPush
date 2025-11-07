@@ -1,0 +1,11 @@
+# Example Configuration File
+# Copy this to connector_config.json and fill in your Azure details
+
+{
+  "tenant_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "application_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "application_secret": "your-client-secret-here",
+  "dce_endpoint": "https://your-dce-name.ingest.monitor.azure.com",
+  "dcr_immutable_id": "dcr-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "stream_name": "Custom-cveBusterv2_CL"
+}
