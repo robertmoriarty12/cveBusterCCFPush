@@ -1,0 +1,22 @@
+{
+  "publisherId": "yourcompany",
+  "offerId": "cvebuster-sentinel-push-connector",
+  "firstPublishDate": "2025-11-06",
+  "lastPublishDate": "2025-11-06",
+  "providers": [
+    "Your Company"
+  ],
+  "categories": {
+    "domains": [
+      "Security - Vulnerability Management",
+      "Security - Threat Protection"
+    ],
+    "verticals": []
+  },
+  "support": {
+    "name": "Your Company Support",
+    "email": "support@yourcompany.com",
+    "tier": "Partner",
+    "link": "https://yourcompany.com/support"
+  }
+}

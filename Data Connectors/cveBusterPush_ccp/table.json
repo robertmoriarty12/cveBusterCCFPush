@@ -1,0 +1,62 @@
+{
+  "name": "cveBusterVulnerabilities_CL",
+  "type": "Microsoft.OperationalInsights/workspaces/tables",
+  "apiVersion": "2021-03-01-privatepreview",
+  "tags": {},
+  "properties": {
+    "plan": "Analytics",
+    "schema": {
+      "name": "cveBusterVulnerabilities_CL",
+      "columns": [
+        {
+          "name": "TimeGenerated",
+          "type": "datetime"
+        },
+        {
+          "name": "VulnId",
+          "type": "string"
+        },
+        {
+          "name": "VulnTitle",
+          "type": "string"
+        },
+        {
+          "name": "Severity",
+          "type": "string"
+        },
+        {
+          "name": "CVSS",
+          "type": "real"
+        },
+        {
+          "name": "MachineName",
+          "type": "string"
+        },
+        {
+          "name": "AssetCriticality",
+          "type": "string"
+        },
+        {
+          "name": "PatchAvailable",
+          "type": "boolean"
+        },
+        {
+          "name": "ExploitAvailable",
+          "type": "boolean"
+        },
+        {
+          "name": "DiscoveryDate",
+          "type": "datetime"
+        },
+        {
+          "name": "LastModified",
+          "type": "datetime"
+        },
+        {
+          "name": "Status",
+          "type": "string"
+        }
+      ]
+    }
+  }
+}
