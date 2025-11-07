@@ -49,7 +49,7 @@ cveBusterCCFPush/
 │   ├── testParameters.json                # Test deployment parameters
 │   └── 3.0.0.zip                         # Complete solution package
 │
-└── PythonConnector/                       # Python Push Client
+└── Server/                       # Python Push Client
     ├── send_to_azure.py                   # Main data push client
     ├── generate_data.py                   # Test data generator
     ├── config_gui.py                      # GUI configuration tool
@@ -271,7 +271,7 @@ The deployment creates:
 
 ```bash
 git clone https://github.com/robertmoriarty12/cveBusterCCFPush.git
-cd cveBusterCCFPush/PythonConnector
+cd cveBusterCCFPush/Server
 ```
 
 #### 2. Install Dependencies
@@ -509,7 +509,7 @@ crontab -e
 
 Add:
 ```
-0 * * * * cd ~/cveBusterCCFPush/PythonConnector && python3 send_to_azure.py --config connector_config.json --data cvebuster_data.json >> /var/log/cvebuster_push.log 2>&1
+0 * * * * cd ~/cveBusterCCFPush/Server && python3 send_to_azure.py --config connector_config.json --data cvebuster_data.json >> /var/log/cvebuster_push.log 2>&1
 ```
 
 ### Systemd Service (Linux)
@@ -523,7 +523,7 @@ After=network.target
 [Service]
 Type=oneshot
 User=azureuser
-WorkingDirectory=/home/azureuser/cveBusterCCFPush/PythonConnector
+WorkingDirectory=/home/azureuser/cveBusterCCFPush/Server
 ExecStart=/usr/bin/python3 send_to_azure.py --config connector_config.json --data cvebuster_data.json
 
 [Install]
